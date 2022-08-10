@@ -6,7 +6,7 @@ public class Carpark {
     private String lots_available;
     private String carpark_number;
 
-    public Carpark(String total_lots, String lot_type, String lots_available,String carpark_number) {
+    public Carpark(String total_lots, String lot_type, String lots_available, String carpark_number) {
         this.total_lots = total_lots;
         this.lot_type = lot_type;
         this.lots_available = lots_available;
@@ -45,8 +45,8 @@ public class Carpark {
         this.lots_available = lots_available;
     }
 
-    public String toString(){
-        String msg = "Carpark Number: " + getCarpark_number() + "\nLot Type: " + getLot_type() + "\nLots Available: " + getLots_available() +"\nTotal Lots: " + getTotal_lots();
+    public String toString() {
+        String msg = "Carpark Number: " + getCarpark_number() + "\nLot Type: " + getLot_type() + "\nLots Available: " + getLots_available() + "\nTotal Lots: " + getTotal_lots();
         return msg;
     }
 }

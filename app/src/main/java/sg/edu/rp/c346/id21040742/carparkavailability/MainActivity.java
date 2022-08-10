@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     ListView lvCarpark;
     AsyncHttpClient client;
+    Button btnSearch;
+    EditText text;
 
 
 
@@ -38,6 +41,29 @@ public class MainActivity extends AppCompatActivity {
 
         lvCarpark = findViewById(R.id.lvCarpark);
         client = new AsyncHttpClient();
+        btnSearch = findViewById(R.id.btnSearch);
+        text = findViewById(R.id.EditText);
+        ArrayList<Carpark> alCarpark = new ArrayList<Carpark>();
+        ArrayList<Carpark> alResult = new ArrayList();
+
+//        btnSearch.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                String search =  text.getText().toString();
+//
+//                for (int i = 0; i < alCarpark.size(); i++ ) {
+//                    if (alCarpark.get(i).getCarpark_number().contains(search)) {
+//                        alResult.add(alCarpark.get(i));
+//
+//                    }
+//                }
+//
+//                ArrayAdapter<Carpark> adapter = new ArrayAdapter<Carpark>(MainActivity.this,android.R.layout.simple_list_item_1,alResult);
+//                lvCarpark.setAdapter((adapter));
+//
+//            }
+//        });
     }
 
     @Override
